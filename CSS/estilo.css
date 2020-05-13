@@ -1,0 +1,20 @@
+body { 
+		background-image: url(file:///C:/papel%20de%20parede%20Hatus/HTML/img/Design%20sem%20nome.png);
+		background-size: 100vw 100vh; height: 100vw 100vh ;font-family: Arial; color: #D3D3D3}
+
+	.menu {background-color: #1C1C1C}
+
+	.menu ul {display: flex;
+			justify-content: space-around;}
+
+	.menu li{list-style: none;}
+
+	a {text-decoration: none; color: white}
+
+	a:hover {text-decoration: underline;}
+
+	.site-title, .site-subtitle {
+		color: white;
+		text-align: center;}
+
+	.site-title {font-family: Bodoni}
