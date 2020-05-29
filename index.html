@@ -1,50 +1,121 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hatus.Show</title>
     <link rel="stylesheet" href="./CSS/estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Poiret+One&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/32934bafd6.js" crossorigin="anonymous"></script>
   </head>
 
   <body>
-      <header>
+    <header>
 
-        <nav class="menu">
-          <ul>
-            <li><a style="font-family: Arial" href="#">Sobre</a></li>
-            <li><a style="font-family: Arial" href="#">Portfólio</a></li>
-            <li><a style="font-family: Arial" href="#">Contato</a></li>
-          </ul>
-        </nav>
+      <nav class="menu">
+        <ul class="container">
+          <li><a style="font-family: Arial" href="#sobre">Sobre</a></li>
+          <li><a style="font-family: Arial" href="#portfolio">Portfólio</a></li>
+          <li><a style="font-family: Arial" href="#contato">Contato</a></li>
+        </ul>
+      </nav>
 
-        <div>
-          <h1 class="site-title">Hatus Cavalcanti</h1>
-          <h2 class="site-subtitle">Jr. Frontend Developer</h2>
-        </div>
+      <div class="nome">
+        <h1 class="site-title">Hatus Cavalcanti</h1>
+        <h2 class="site-subtitle">Jr. Frontend Developer</h2>
+      </div>
 
-      </header>
+    </header>
 
-      <section>
-          <h2>Portfólio</h2>
-          <figure>
-            <figcaption>eCommerce</figcaption>
-            <img class="img-portfolio" src="https://i1.wp.com/indaiatubanos.net.br/wp-content/uploads/2019/11/csm_Carro_do_ovo_almirolopes_arquivo_correio_e382573003.jpg?w=1000&ssl=1" alt="eCommerce">
-          </figure>
-          <figure>
-             <figcaption>Mobile</figcaption>
-            <img class="img-portfolio" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTdMn3HZUfF0udcPWr-cedO40cRuiEl_XwnBvTgDvYa9Z4ZTGj6&usqp=CAU" alt=">Mobile">
-          </figure>
-          <figure>
-            <figcaption>Web design</figcaption>
-            <img class="img-portfolio" src="https://audienciadatvmix.files.wordpress.com/2014/04/pedro_cardoso.jpg" alt="Web design">
-          </figure>
-          <figure>
-            <figcaption>Projetos pessoais</figcaption>
-            <img class="img-portfolio" src="https://images.apester.com/user-images%2F72%2F7283261fee2d3970b192764d6b46fc01.jpg/undefined/undefined/undefined" alt="Projetos pessoais">
-          </figure>
-  </section>
-</body>
-  
+      <section class="sobre container" id="sobre">
+       <h2>Sobre</h2>
+
+      <figure class="avatar">
+        <img src="https://avatars3.githubusercontent.com/u/65029327?s=460&u=6fcf73aa5ba739b8ef083269e2e82eceb0ad44a3&v=4" alt="Hatus Cavalcanti">
+     </figure>
+
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, fugiat magni ipsa est fuga consequatur eligendi deleniti, molestias cupiditate labore, accusantium pariatur. Eos aspernatur porro voluptatum mollitia dolores dolorem saepe.</p>
+
+      <p>Quos tempore iusto facere vel quaerat voluptas eaque at nihil praesentium? Ea dignissimos voluptas dolorum incidunt, quasi iure sequi, facere laudantium commodi facilis tempore! Aspernatur dolore mollitia provident recusandae saepe!</p>
+
+      <p>Ratione consequatur delectus quaerat mollitia reprehenderit praesentium ab rem suscipit officia provident recusandae aliquid quia sed, cum incidunt earum impedit. Corrupti quas dolorem eligendi ex rerum facere aperiam exercitationem tempora!</p>
+    
+      <p>Itaque laboriosam error nesciunt, incidunt aspernatur obcaecati, repellendus ut adipisci fugit veritatis voluptate voluptates asperiores ad, nemo dolor consequuntur inventore repudiandae tenetur mollitia provident temporibus enim! Autem magnam ipsam iusto.</p>
+
+    </section>
+      
+    <section class="portfolio container" id="portfolio">
+        <h2>Portfólio</h2>
+         
+        <div class="grid">
+
+          <div class="flip-card">
+            <div class="card">
+              <figure class="card-front">
+                <img class="img-portfolio" src="https://i1.wp.com/indaiatubanos.net.br/wp-content/uploads/2019/11/csm_Carro_do_ovo_almirolopes_arquivo_correio_e382573003.jpg?w=1000&ssl=1" alt="eCommerce">
+                <figcaption>eCommerce</figcaption>
+              </figure>
+              <div class="card-back">
+                Carro do ovo
+              </div>
+            </div>
+          </div> 
+
+          <div class="flip-card">
+            <div class="card">
+              <figure class="card-front">
+                <img class="img-portfolio" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTdMn3HZUfF0udcPWr-cedO40cRuiEl_XwnBvTgDvYa9Z4ZTGj6&usqp=CAU" alt=">Mobile">
+                <figcaption>Mobile</figcaption>
+              </figure>
+              <div class="card-back">
+                Miranha
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-card">
+            <div class="card">
+              <figure class="card-front">
+                <img class="img-portfolio" src="https://audienciadatvmix.files.wordpress.com/2014/04/pedro_cardoso.jpg" alt="Web design">
+                <figcaption>Web design</figcaption>
+              </figure>
+              <div class="card-back">
+                Estiloso
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-card">
+            <div class="card">
+              <figure class="card-front">
+                <img class="img-portfolio" src="https://images.apester.com/user-images%2F72%2F7283261fee2d3970b192764d6b46fc01.jpg/undefined/undefined/ undefined" alt="Projetos pessoais">
+              <figcaption>Projetos pessoais</figcaption>
+              </figure>
+              <div class="card-back">
+                O JOGO
+              </div>
+            </div>
+          </div>  
+
+      </div>
+    </section>
+
+    <section class="contatos container" id="contato">
+      <h2>Contato </h2>
+
+      <div class="grid icons">
+        <a target="_blank" href="https://steamcommunity.com/profiles/76561198322081006/">
+          <i class="fab fa-steam"></i>
+        </a>
+        <a target="_blank" href="https://github.com/H4TUS">
+          <i class="fab fa-github"></i>
+        </a>
+        <a target="_blank" href="https://discord.com/channels/@me">
+          <i class="fab fa-discord"></i>
+        </a>
+
+      </div>
+    </section>
+  </body>
 </html>
