@@ -9,8 +9,8 @@ body {
 	background-size: 100vw 100vh; 
 	height: 100vw 100vh ; 
 	font-family: Arial; 
-	color: #D3D3D3;
-	font-size: 12;
+	color: white;
+	font-size: auto;
 	}
 
 @media (min-width: 400px) {
@@ -31,7 +31,6 @@ body {
 		}	
 	}
 
-
 header {
 	height: 80vh;
 	display: flex;
@@ -39,43 +38,217 @@ header {
 	align-items: center;
 	}
 
-	.menu {
-		background-color: #1C1C1C;
-		position: fixed;
-		width: 100vw;
-		top: 0;
-		}
-
-	.menu ul {display: flex;
-			justify-content: space-around;}
-
-	.menu li{list-style: none;}
-
-	.menu a{
-		padding: 20px 30px;
-		display: block;
+.menu {
+	background-color: #1C1C1C;
+	position: fixed;
+	width: 100vw;
+	top: 0;
 	}
 
+.menu ul {display: flex;
+		justify-content: space-around;}
 
-	a {text-decoration: none; color: white;}
+.menu li{list-style: none;}
 
-	a:hover {text-decoration: underline;}
+.menu a{
+	padding: 20px 30px;
+	display: block;
+	}
 
-		.site-title, .site-subtitle {
-		color: white;
-		text-align: center;}
+a {
+	text-decoration: none; 
+	color: white;
+	}
 
-		.site-subtitle {font-family: italic}
+.menu a:hover{
+	color: #A510CA;
+	text-shadow: 0px 0px 15px #A510CA;
+	transition: color 500ms, text-shadow 500ms;
 
-	div {
-		margin:50px;
-		border: 5px solid #1C1C1C;
-		padding: 60px;
-		background-image: url(https://media.giphy.com/media/vVYQgCPIsYYJa/giphy.gif);
+}
 
+.site-title, .site-subtitle {
+	color: white;
+	text-align: center;}
+
+.site-title {
+	font-family: 'Poiret One', cursive;
+	font-size: 50px;
+	}
+
+.site-subtitle {
+	font-family: 'Roboto', sans-serif;
+	font-size: 30px;
+	}
+
+.nome {
+	margin:50px;
+	border: 5px solid #1C1C1C;
+	padding: 60px;
+	background-image: url(https://media.giphy.com/media/vVYQgCPIsYYJa/giphy.gif);
+	}
+
+.nome {
+	transform: scale(0.2) translate(50px);
+	opacity: 0;
+
+	animation: linear 600ms nome forwards;
+}
+
+@keyframes nome {
+	from {
+		transform: scale(0.2) translate(50px);
+	opacity: 0;
+	}
+	to{
+		transform: scale(1) translateY(0);
+		opacity: 1;
+	}
+}
+
+.sobre .avatar {
+	margin-right: 1.5em;
+	float: left;
+}
+
+.sobre .avatar img {
+	border-radius: 50%;
+}
+
+.sobre p {
+	margin-bottom: 1em;
+	text-indent: 2em;
+	text-align: justify;
+}
+
+.portfolio .grid {
+	display: grid;
+	grid-gap: 2em;
+	}
+
+.portfolio figure {
+	text-align: center;
+	font-family: 'Poiret One', cursive;
+	font-size: 30px;
+	}
+
+.img-portfolio {
+	height: 180px;
+	width: 280px;
+	transition: transform 500ms;
+	}
+
+/*.img-portfolio:hover {
+	transform: scale(1.1) rotate(360deg);
+	} */
+
+.flip-card {
+	perspective: 500px;
+}
+
+.card {
+	background-color: red;
+	position: relative;
+	transform-style: preserve-3d;
+	transition: transform 1.5s;
+}
+
+.flip-card:hover .card {
+	transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+	backface-visibility: hidden;
+	top: 0;
+	position: absolute;
+	left: 0;
+}
+
+.card-back {
+	background-color: #262626;
+	color: #A510CA;
+	text-shadow: 0px 0px 25px #A510CA;
+	height: 180px;
+	width: 280px;
+	transform: rotateY(180deg);
+	text-align: center;
+	padding: 80px;
+}
+
+.contatos a {
+	justify-content: center;
+	font-size: 5em;
+	}
+
+.contatos a:active,.contatos a:hover {
+	text-decoration: none;
+	color: #A510CA;
+	text-shadow: 0px 0px 30px #A510CA;
+	transition: color 700ms, text-shadow 500ms;
+	}	
+
+.contatos .icons {
+	text-align: center;
+	}	
+
+.sobre h2, .contatos h2, .portfolio h2 {
+	font-size: 50px;
+	font-family: 'Poiret One', cursive;
+	text-align: center;
+	margin: 1.5em;
+	}
+
+.sobre, .contatos, .portfolio {
+	padding: 2m;
+	min-height: 100vh;
+	margin-left: auto;
+	margin-right: auto;
+	}
+		
+ul {
+	margin: auto;
+}
+	
+@media (min-width: 10px) {
+	.grid {
+		justify-content: center;
+		height: 900px;
 		}
 
-		.img-portfolio {
-			height: 180px;
-			width: 240px;
+@media (min-width: 680px) {
+	.grid {
+	grid-template-columns: repeat(2, 280px);
+	justify-content: center;
+	height: calc(95vh - 4em - 40px)
 		}
+	}
+
+@media (min-width: 800px) {
+	.grid {
+		grid-template-columns: repeat(2, 380px);
+		justify-content: center;
+		height: calc(90vh - 4em - 40px)
+		}
+	}	
+
+@media (min-width: 1000px) {
+	.grid {
+		grid-template-columns: repeat(3, 280px);
+		justify-content: center;
+		}
+	}
+
+@media (min-width: 1200px) {
+	.grid {
+		grid-template-columns: repeat(3, 280px);
+		justify-content: center;
+		}
+	}
+
+@media (min-width: 1200px) {
+	.container, .contatos, .portfolio {
+		max-width: 1200px;
+		margin-left: auto;
+		margin-right: auto;
+	}	
+}	
